@@ -1,0 +1,82 @@
+<div class="row post-full">
+
+  {% assign reviewspage = site.posts | where: "title", "World music reviews, guides and sleeve notes" %}
+  <ul class="pagination">
+  <li class="prev"><a href="{{ reviewspage[0].url }}" title="{{ reviewspage[0].title }}">&laquo; {{ reviewspage[0].title }}</a></li>
+  </ul>
+
+  <div class="col-xs-12">
+    <div class="content">
+      <div class='lyrics'>
+          {% if (page.artist | size) > 0 %}
+         <h3 class='lyrics'>{{page.artist}}</h3>  
+           {% endif %}
+             {% if (page.album | size) > 0 %}
+         <h3 class='lyrics'>{{page.album}}</h3>  
+           {% endif %}
+          {% if (page.catalogue | size) > 0 %}
+          <h3 class='lyrics'>{{page.catalogue}}  </h3>
+           {% endif %}
+          {% if (page.rating | size) > 0 %}
+          <h3 class='lyrics'>{{page.rating}} </h3> 
+           {% endif %}
+        {% if (page.classification | size) > 0 %}
+          <h3 class='lyrics'>{{page.classification}}  </h3>
+           {% endif %}
+
+            <br>
+       
+        {% include JB/base %}
+        
+         {% if {{page.soundcloud-track}} %}
+           <br>
+          <iframe width="100%" height="150" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{page.soundcloud-track}}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;"></iframe>
+        {% endif %}
+
+          {% if {{page.soundcloud}} %}
+         <br>
+          <iframe width="100%" height="350" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{page.soundcloud}}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;"></iframe>
+        {% endif %}
+
+         {% if (page.video | size) > 0 %}
+ 
+            <div class="videoWrapper">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/{{page.video}}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen modestbranding rel="0" showinfo="0" theme="light">
+            </iframe>
+            <br>
+            </div>
+            <span class='videomain-desc'>
+            {{page.videotext}}
+            </span>
+
+        {% elsif (page.vimeo | size ) > 0 %}
+            <div class="videoWrapper left">
+          <iframe src="https://player.vimeo.com/video/{{page.vimeo}}" width="500" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+             <br>
+            </div>
+            <span class='videomain-desc'>
+            {{page.vimeotext}}
+            </span>
+      {% endif %} 
+
+           {% assign image = {{page.image}} %}
+       <!--   <p>
+            <span class='marginnote'><img src='{{base}}/assets/themes/tufte/images/{{image}}' />
+            </span>
+        </p> -->
+
+        <em>Originally published in {{page.source}}.</em>
+        <br>
+        {{ content }}
+
+        <br>
+        <hr>
+
+        {% assign posttags = page.tags %}
+        {% include related_reviews_by_tag %}
+
+      </div>
+    </div>
+  </div>
+</div>

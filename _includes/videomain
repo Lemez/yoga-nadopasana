@@ -1,0 +1,12 @@
+
+
+<p class='{% cycle 'videoleft','videoright' %}'>
+<span>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/{{include.id}}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen modestbranding rel="0" showinfo="0" theme="light">
+</iframe>
+<br>
+</span>
+<span class='videomain-desc'>
+{{include.text}}
+</span>
+</p>

@@ -1,0 +1,51 @@
+<!-- <div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+</div> -->
+
+
+<div class="row post-full">
+  <div class="col-xs-12">
+
+    <div class="content">
+
+      <h1>{{page.title}}</h1>
+      <h2>{{page.description}}</h2>
+      <br>
+       
+      {% if (page.year | size) > 0 %}
+      <h3 class='lyrics'>Year: {{page.year}}  </h3>
+       {% endif %}
+
+      <br>
+      <img class="fullwidth" src="{{IMAGE_PATH}}/{{page.image}}" />
+
+      <br>
+        
+      {{ content }}
+
+      {% if page.github and page.demo %}
+      
+        <p class='techfooter'>You can browse, fork and improve the codebase <a href="http://www.github.com/lemez/{{page.github}}">here</a> and play with the live app <a href="{{page.demo}}">here</a>.</p>
+
+        {% elsif page.github  %} 
+
+         <p class='techfooter'>You can browse, fork and improve the codebase <a href="http://www.github.com/lemez/{{page.github}}">here</a>. There isn't an online live demo at the moment, sorry.</p>
+
+        {% elsif page.demo %}
+
+         <p class='techfooter'>You can play with the app online <a href="{{page.demo}}">here</a>. The codebase isn't public yet, sorry, but I'm working on it.</p>
+     
+       {% endif %}
+  
+          {% include tags %}
+      
+        <hr>
+
+        {% assign posttags = page.tags %}
+        {% include related_posts_by_tag %}
+       
+        <hr>
+        {% include JB/comments %}
+     
+  </div>
+</div>

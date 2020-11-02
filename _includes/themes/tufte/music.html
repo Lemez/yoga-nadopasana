@@ -1,0 +1,104 @@
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="content">
+      <div class='lyrics'>
+        <h1>{{page.title}}</h1>
+
+
+          {% if (page.director | size) > 0 %}
+         <h3 class='lyrics'>Director: {{page.director}}</h3>  
+           {% endif %}
+          {% if (page.writer | size) > 0 %}
+          <h3 class='lyrics'>Writer: {{page.writer}}  </h3>
+           {% endif %}
+          {% if (page.producer | size) > 0 %}
+          <h3 class='lyrics'>Producer: {{page.producer}} </h3> 
+           {% endif %}
+        {% if (page.venue | size) > 0 %}
+          <h3 class='lyrics'>Theatre: {{page.venue}}  </h3>
+           {% endif %}
+
+            {% if (page.label | size) > 0 %}
+          <h3 class='lyrics'>Label: {{page.label}}  </h3>
+           {% endif %}
+            {% if (page.publisher | size) > 0 %}
+          <h3 class='lyrics'>Publisher: {{page.publisher}}  </h3>
+           {% endif %}
+
+          {% if (page.year | size) > 0 %}
+          <h3 class='lyrics'>Year: {{page.year}}  </h3>
+           {% endif %}
+            <br>
+       
+        {% include JB/base %}
+        
+         {% if {{page.soundcloud-track}} %}
+           <br>
+          <iframe width="100%" height="150" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{page.soundcloud-track}}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;"></iframe>
+        {% endif %}
+
+          {% if {{page.soundcloud}} %}
+         <br>
+          <iframe width="100%" height="350" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{page.soundcloud}}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;"></iframe>
+        {% endif %}
+
+         {% if (page.video | size) > 0 %}
+ 
+            <div class="videoWrapper">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/{{page.video}}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen modestbranding rel="0" showinfo="0" theme="light">
+            </iframe>
+            <br>
+            </div>
+            <span class='videomain-desc'>
+            {{page.videotext}}
+            </span>
+
+        {% elsif (page.vimeo | size ) > 0 %}
+            <div class="videoWrapper left">
+          <iframe src="https://player.vimeo.com/video/{{page.vimeo}}" width="500" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+             <br>
+            </div>
+            <span class='videomain-desc'>
+            {{page.vimeotext}}
+            </span>
+      {% endif %} 
+
+           {% assign image = {{page.image}} %}
+
+            {% if (page.people | size) > 0 %}
+              <p> With: </p>
+              <ul>
+
+                {% for person in page.people %}
+                  <li>{{person}}</li>
+                {% endfor %}
+
+              </ul>
+           {% endif %}
+
+        {{ content }}
+
+         {% for tag in {{page.artist}} %}
+
+          {% assign pages_list = site.lyrics | where: "artist", tag  %}
+          {% assign page_size = pages_list | size  %}
+
+          {% if page_size > 0 %}
+            <h3>Lyrics</h3>
+            <p>
+            {% include JB/pages_list %}
+            </p>
+          {% endif %}
+
+        {% endfor %}
+
+        <hr>
+        
+         {% assign posttags = page.tags %}
+        {% include related_posts_by_tag %}
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -40,6 +40,8 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        {% if page.description %}<h4>{{ page.description }}</h4>{% endif %}
+        {% if page.date %}<em>{{ page.date | date: "%B %-d, %Y" }}</em>{% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

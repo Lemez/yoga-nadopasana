@@ -1,0 +1,19 @@
+{% if {{include.localurl}} %}
+
+<p>
+	<span class="marginnote">
+		<audio controls src="{{base}}/assets/themes/tufte/audio/{{include.localurl}}"></audio>
+	</span>
+</p>
+
+
+{% else %}
+
+
+<p>
+	<span class="marginnote">
+		<audio controls src="{{include.url}}"></audio>
+	</span>
+</p>
+
+{% endif %}

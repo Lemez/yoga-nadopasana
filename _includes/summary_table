@@ -1,0 +1,47 @@
+{% assign totposts = site.posts | size %}
+{% assign totreviews = site.reviews | size %}
+{% assign totlyrics = site.lyrics | size %}
+{% assign overall = totposts | plus: totreviews | plus: totlyrics %}
+ {% assign lyrics = site.posts | where: "title", "Song Lyrics, Poetry and Creative Writing" %}
+ {% assign reviews = site.posts | where: "title", "World music reviews, guides and sleeve notes" %} 
+
+<div class='index-table clear'> 
+		<div class='index-row'>
+	 		<div class='index-item index-overall index-number'><a href="/archive.html">{{overall}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-music index-number'><a href="/music.html">{{site.categories.music | size}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-print index-number'><a href="/writing.html">{{site.categories.print | size}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-tech index-number'><a href="/tech.html">{{site.categories.tech | size}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-blog index-number'><a href="/blog.html">{{site.categories.blog | size}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-radio index-number'><a href="/writing.html#radio">{{site.categories.radio | size}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-tv index-number'><a href="/writing.html#tv">{{site.categories.tv | size}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-tv index-number'><a href="{{lyrics[0].url}}">{{site.lyrics | size}}</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item index-reviews index-number'><a href="{{reviews[0].url}}">{{site.reviews | size}}</a></div>
+	 	</div>
+	 	<div class='index-row'>
+	 		<div class='index-item'><a href="/archive.html">Overall</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="/music.html">Music</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="/writing.html">Print</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="/tech.html">Tech</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="/blog.html">Blog</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="/writing.html#radio">Radio</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="/writing.html#tv">TV</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="{{lyrics[0].url}}">Lyrics</a></div>
+	 		<div class='gap'></div>
+	 		<div class='index-item'><a href="{{reviews[0].url}}">Reviews</a></div> 
+	 	</div>
+</div>

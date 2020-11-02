@@ -1,0 +1,15 @@
+{% unless (include.hidden | size) > 0 }} %}
+<div class="videoWrapper">
+<p>
+<span>
+<iframe width="560" height="349" src="https://www.youtube.com/embed/{{include.id}}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen modestbranding rel="0" showinfo="0" theme="light">
+</iframe>
+<br>
+</span>
+</p>
+<br>
+</div>
+<p>
+<span class='videomain-desc'><em>{{include.text}}</em></span>
+</p>
+{% endunless %}

@@ -1,0 +1,8 @@
+{% assign pages_list = site.lyrics | where: "artist", tag  %}
+{% assign page_size = pages_list | size  %}
+{% if page_size > 0 %}
+<h3>Songs</h3>
+<p>
+{% include JB/pages_list %}
+</p>
+{% endif %}

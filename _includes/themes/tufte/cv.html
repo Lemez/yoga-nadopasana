@@ -1,0 +1,118 @@
+<!-- <div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+</div> -->
+
+
+<div class="row post-full">
+  <div class="col-xs-12">
+<!--     <div class="date"><span>{{ page.date | date_to_long_string }}</span> </div> -->
+    <div class="content">
+
+      <h1>{{page.title}}</h1>
+      <h2>{{page.description}}</h2>
+      <br>
+
+      {% if (page.director | size) > 0 %}
+     <h3 class='lyrics'>Director: {{page.director}}</h3>  
+       {% endif %}
+      {% if (page.writer | size) > 0 %}
+      <h3 class='lyrics'>Writer: {{page.writer}}  </h3>
+       {% endif %}
+      {% if (page.producer | size) > 0 %}
+      <h3 class='lyrics'>Producer: {{page.producer}} </h3> 
+       {% endif %}
+    {% if (page.venue | size) > 0 %}
+      <h3 class='lyrics'>Theatre: {{page.venue}}  </h3>
+       {% endif %}
+
+        {% if (page.label | size) > 0 %}
+      <h3 class='lyrics'>Label: {{page.label}}  </h3>
+       {% endif %}
+        {% if (page.publisher | size) > 0 %}
+      <h3 class='lyrics'>Publisher: {{page.publisher}}  </h3>
+       {% endif %}
+
+      {% if (page.year | size) > 0 %}
+      <h3 class='lyrics'>Year: {{page.year}}  </h3>
+       {% endif %}
+
+       {% unless page.categories contains 'music' or page.categories contains 'tv' or page.categories contains 'cv' %}
+
+          {% assign words = page.content | size %}
+          {% assign mins = words | divided_by: 900 %}
+
+           {% if mins == 18 or mins == 8 or mins == 11 %}
+           {% assign indefarticle = "An" %}
+           {% else %}
+           {% assign indefarticle = "A" %}
+           {% endif %}
+
+          <h5> {{indefarticle}} {{ mins }} minute read</h5>
+
+        {% endunless %} 
+          {% unless page.source == empty %}
+            <p>
+              <span class="post_tagline">{{page.source}}</span>
+              <span class="post_tagline">{{page.original_date}}</span>
+            </p> 
+        {% endunless %} 
+
+        {% include tags %}
+
+        {% if (page.video | size) > 0 %}
+          <br>
+          <div class="videoWrapper">
+            <p>
+            <span>
+            <iframe width="560" height="349" src="https://www.youtube.com/embed/{{page.video}}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen modestbranding rel="0" showinfo="0" theme="light">
+            </iframe>
+            <br>
+            </div>
+            </span>
+            <span class='videomain-desc'>
+            {{page.videotext}}
+            </span>
+            </p>
+
+
+        {% elsif (page.vimeo | size ) > 0 %}
+         <br>
+          <p class='videofull'>
+
+            <span>
+          <iframe src="https://player.vimeo.com/video/{{page.vimeo}}" width="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </span>
+          </p>
+      {% endif %} 
+      <br>
+      <div class='cvfull'>
+        
+      {{ content }}
+    </div>
+    </div>
+
+          {% include tags %}
+      
+        <hr>
+       <!--  <ul class="pagination">
+        {% if page.previous %}
+          <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; {{ page.previous.title }}</a></li>
+        {% else %}
+          <li class="prev disabled"><a>&larr; Previous</a></li>
+        {% endif %}
+          <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">All Posts</a></li>
+        {% if page.next %}
+          <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">&raquo; {{ page.next.title }}</a></li>
+        {% else %}
+          <li class="next disabled"><a>Next &rarr;</a>
+        {% endif %}
+        </ul> -->
+
+        {% assign posttags = page.tags %}
+        {% include related_posts_by_tag %}
+       
+        <hr>
+        {% include JB/comments %}
+     
+  </div>
+</div>

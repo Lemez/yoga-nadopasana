@@ -1,0 +1,95 @@
+
+<h1>{{page.title}}</h1>
+<h3>{{page.group}}</h3>
+
+<!-- content -->
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="content">
+      <div class='lyrics'>
+
+      
+      {% if (page.credits | size) > 0 %}
+        <h3 class='lyrics'>credits: {{page.credits}}</h3>
+      {% endif %}
+
+      {% if (page.year | size) > 0 %}
+        <h3 class='lyrics'>year: {{page.year}}</h3>
+      {% endif %}
+
+      
+
+      <!-- about -->
+
+       {% if (page.about | size) > 0 %}
+       <h3>About</h3>
+       <p><em>{{page.about}}</em></p>
+       {% endif %}
+
+        <!-- lyrics -->
+
+        {{ content }}
+
+      </div>
+
+      {% if (page.press | size) > 0 %}
+      <h3>Press</h3>
+       <blockquote> <p>{{page.press[0]}}, <em>{{page.press[1]}}</em></p></blockquote>
+      {% endif %}
+
+    </div>
+  </div>
+      
+  <hr>
+  <ul class="pagination">
+
+  {% assign songs = (site.lyrics | sort: 'album') %}
+  {% assign album = site.albumarray %}
+  {% assign urls = site.urlarray %}
+
+  {% for song in songs %}
+    {% if song.artist == page.artist %}
+        {% assign album = album | push: song.title %}
+        {% assign urls = urls | push: song.url %}
+    {% endif %}
+  {% endfor %}
+
+  {% unless (songs | size) == 1%}
+
+    {% for title in album %}
+
+      {% if forloop.first %}
+        {% assign previndex = album | size | minus: 1 %}
+        {% assign nextindex = forloop.index %}
+
+      {% elsif forloop.last %}
+        {% assign previndex = forloop.index | minus: 2 %}
+        {% assign nextindex = 0 %}
+
+      {% else %}
+        {% assign previndex = forloop.index | minus: 2 %}
+        {% assign nextindex = forloop.index %}
+        
+      {% endif %}
+
+      {% assign previous = album[previndex] %}
+      {% assign next = album[nextindex] %}
+
+      {% if title == page.title %}
+      <li class="previous"><a href="{{urls[previndex]}}" title="{{ previous}}">&laquo; {{ previous}}</a></li>
+      <li><a href="/posts/music/2015-10-10-lyrics.html">Song Lyrics</a></li>
+   
+       <li class="next"><a href="{{urls[nextindex]}}" title="{{next}}">&raquo; {{ next}}</a></li>
+      {% endif %}
+
+    {% endfor %}
+
+  {% endunless%}
+  </ul>
+        
+</div>
+
+<hr>
+        {% include JB/comments %}
+

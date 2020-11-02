@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "sunrise" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Yoga Nadopasana"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Yoga Nadopasana"
+description              : "Embodied VoiceWork from South India"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,30 +93,30 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Jonathan Walton"
+  avatar           : "/assets/images/kolam-avatar.jpg"
+  bio              : "Welcome to my resource page for Yoga Nadopasana, a traditional embodied voicework practice from South India. Please <a href='/about-jonathan/'><u>contact me</u></a> if you have any questions or would like to join an online practice group."
+  # location         : ""
+  # email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   # url: "mailto:your.name@email.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   # url: "https://your-website.com"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url: "https://twitter.com/"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   # url: "https://facebook.com/"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   # url: "https://github.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -206,7 +206,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:tags/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -219,6 +219,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -246,16 +247,15 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - all
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -265,6 +265,29 @@ compress_html:
   ignore:
     envs: development
 
+include: ["_pages","_pages/*" ]
+
+collections:
+  guide:
+    output: true
+    permalink: /:collection/:name
+  techniques:
+    output: true
+    permalink: /:collection/:name
+  reading:
+    output: true
+  blog:
+    output: true
+  practice:
+    output: false
+  tanpura:
+    output: true
+  listening:
+    output: true
+  testimonials:
+    output: false
+  watching:
+    output: false
 
 # Defaults
 defaults:
@@ -278,4 +301,50 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      related: true
+      related: false
+  - scope:
+      path: ""
+      type: guide
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: false
+  - scope:
+      path: ""
+      type: techniques
+    values:
+      layout: single
+      author_profile: true
+      comments: # true
+      share: true
+      related: false
+  - scope:
+      path: ""
+      type: watching
+    values:
+      layout: single
+      author_profile: true
+      comments: # true
+      share: true
+      related: false
+  - scope:
+      path: ""
+      type: tanpura
+    values:
+      layout: single
+      author_profile: true
+      comments: # true
+      share: true
+      related: false
+  # - scope:
+  #     path: ""
+  #     type: reading
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     comments: # true
+  #     share: true
+  #     related: true

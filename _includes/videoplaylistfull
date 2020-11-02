@@ -1,0 +1,1 @@
+ <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list={{include.url}}&showinfo=1"></iframe></div>

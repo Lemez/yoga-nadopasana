@@ -2,6 +2,14 @@
 {% capture video_provider %}{{ include.provider }}{% endcapture %}
 {% capture video_danmaku %}{{ include.danmaku | default: 0 }}{% endcapture %}
 
+{% if video_id contains "?t=" %}
+{% if video_provider == "youtube" %}
+{% assign array = video_id | split: "t=" %}
+{% assign time = array[1] %}
+{% assign video_id = array[0] | append: "start=" | append: time %}
+{% endif %}
+{% endif %}
+
 {% capture video_src %}
   {% case video_provider %}
   {% when "vimeo" %}
@@ -19,6 +27,14 @@
 <!-- Courtesy of embedresponsively.com //-->
 {% unless video_src == "" %}
   <div class="responsive-video-container">
-    <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
-  </div>
+    <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe> 
+</div>
 {% endunless %}
+ {% if include.caption %}
+ <figure>
+    <figcaption>
+      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+    </figcaption>
+    </figure>
+  {% endif %}
+

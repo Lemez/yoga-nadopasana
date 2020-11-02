@@ -1,0 +1,14 @@
+
+
+{% for story in storyarray %}
+<h3 class='album'>{{storyarray[0].grouping}}</h3>
+<ul class="indented">
+  <li>
+<a href="{{story.url}}">{{ story.title }}</a>
+  </li>
+</ul>
+<p class="indented">{{story.description}}</p>
+  {% endfor %}
+
+
+

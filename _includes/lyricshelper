@@ -1,0 +1,19 @@
+
+{% if prevband != song.group %}
+
+	</ul>
+	<h2 class='band indented'>{{song.group}}</h2>
+	<ul class='album indented'>
+{% endif %}
+	
+{% if prevalbum != song.album %}
+	</ul>
+	<h3 class='album indented'>{{song.album}}</h3>
+	<ul class='album indented'>
+{% endif %}
+
+  <li>
+<a href="{{song.url}}">{{ song.title }} ({{song.year}})</a>
+  </li>
+
+		     

@@ -1,0 +1,6 @@
+<div style="display:inline;">
+{% assign arr = include.text | split: "," %}
+{% for char in arr %}
+	<div class="{{char}} hand"></div>	
+{% endfor %}
+</div>

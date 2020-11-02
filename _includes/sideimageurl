@@ -1,0 +1,7 @@
+{% assign image = {{include.url}} %}
+
+ <p>
+ 		<span class='marginnote'><img src='{{image}}' />
+ 		</span>
+ 		<span class="marginnote buffer">{{include.text}}</span>
+</p>

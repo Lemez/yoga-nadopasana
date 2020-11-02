@@ -1,0 +1,66 @@
+<div class='full'>
+	<div id='success-flash'></div>	
+  <div class="container form">
+	    <form id="contactform" method="POST">
+	    	<input name="name" type='text' placeholder='Your name'>
+	      <input name="email" placeholder="Your email">
+	      <textarea name="message" placeholder="Your message"></textarea>
+	      <input type="text" name="_gotcha" style="display:none" />
+	      <input type="submit" name="submit" value="Submit">
+	    </form>
+	</div>
+</div>
+<script>
+
+	var flashMessage = document.getElementById('success-flash'),   
+    sendButton = document.querySelector('[name="submit"]');
+
+	function checkMail(email){
+		$email=email;
+		var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+
+		if ($email == '' || !re.test($email)) {
+		    flashMessage.innerHTML = 'Please enter a valid email address.';
+		    $valid = false;
+		} else {
+		$valid = true;
+		}
+	}
+
+    sendButton.addEventListener('click', function(event){
+      event.preventDefault(); // prevent the form to do the post.
+      var contactForm = document.querySelector('form');
+      var inputName = contactForm.querySelector('[name="name"]'),
+      inputEmail = contactForm.querySelector('[name="email"]'),
+      textAreaMessage = contactForm.querySelector('[name="message"]');
+
+      checkMail(inputEmail.value);
+      if ($valid===false){
+      console.log("Fail");
+      	  return false;
+      } else {
+	      sendButton.innerHTML = 'Sending...';
+	      flashMessage.innerHTML = '';
+	      var xhr = new XMLHttpRequest();
+	      var _0xa53e=["\x50\x4F\x53\x54","\x2F\x2F\x66\x6F\x72\x6D\x73\x70\x72\x65\x65\x2E\x69\x6F\x2F\x6C\x65\x6D\x65\x7A\x39\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x6F\x70\x65\x6E"];xhr[_0xa53e[2]](_0xa53e[0],_0xa53e[1],true);
+	      xhr.setRequestHeader("Accept", "application/json")
+	      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+	      xhr.send(
+	        "name=" + inputName.value +
+	        "&email=" + inputEmail.value +
+	        "&subject=Website contact" +
+	        "&message=" + textAreaMessage.value);
+
+	      xhr.onloadend = function (res) {
+	        if (res.target.status === 200){
+	        sendButton.innerHTML = 'Sent!';
+	          flashMessage.innerHTML = 'Your message has been sent, thank you.';
+	        }
+	        else {
+	          flashMessage.innerHTML = 'Oops: please check for errors and try again.';
+	          sendButton.innerHTML = 'Submit';
+	        }
+	      }
+      }
+    });
+</script>

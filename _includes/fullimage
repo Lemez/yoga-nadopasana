@@ -1,0 +1,6 @@
+ <figure class='fullwidth'>
+ 	<div class="mainimage">
+            <img  title="Click to enlarge" src="{{include.src}}" />
+          <figcaption>{{include.caption}}</figcaption> 
+          </div>
+        </figure> 

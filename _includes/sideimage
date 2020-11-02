@@ -1,0 +1,8 @@
+{% include JB/base %}
+{% assign image = {{include.img}} %}
+
+ <p>
+ 		<span class='marginnote'><img class="sideimage" title="Click to enlarge" src='{{base}}/assets/themes/tufte/images/{{image}}' />
+ 		</span>
+ 		<span class="marginnote buffer">{{include.text}}</span>
+</p>

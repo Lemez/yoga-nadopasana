@@ -1,0 +1,52 @@
+{% assign highscore = 0 %}
+{% assign allposts = site.reviews %}
+{% assign relatedTitlesArray = site.relatedtitles %} 
+{% assign relatedUrlsArray = site.relatedurls %} 
+
+{% for post in allposts %}
+	{% assign postscore = 0 %}
+
+	{% for maintag in page.tags %}
+		{% for posttag in post.tags %}
+
+			{% if posttag == maintag %}
+				{% assign postscore = postscore | plus: 1 %}
+		 	{% endif %}
+
+		{% endfor %}
+	{% endfor %}
+		
+	{% if postscore > highscore and page.title != post.title %}
+		{% assign relatedTitlesArray = relatedTitlesArray | push: post.title %} 
+		{% assign relatedUrlsArray = relatedUrlsArray | push: post.url %} 
+		{% assign highscore = postscore %}
+	{% endif %}
+
+{% endfor %}
+
+{% if (relatedTitlesArray | size) > 0 %}
+	<h3>You may also like:</h3>
+{% endif %}
+
+<ul class="pagination">
+
+{% if (relatedTitlesArray | size) > 1 %}
+
+	<li class="prev"><a href="{{ BASE_PATH }}{{ relatedUrlsArray[-1] }}" title="{{ relatedTitlesArray[-1] }}">{{ relatedTitlesArray[-1] }}</a></li>
+
+	<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">All Posts</a></li>
+
+	<li class="next"><a href="{{ BASE_PATH }}{{ relatedUrlsArray[-2] }}" title="{{ relatedTitlesArray[-2] }}"> {{ relatedTitlesArray[-2] }}</a></li>
+
+{% elsif (relatedTitlesArray | size) > 0 %}
+	<li class="prev"><a href="{{ BASE_PATH }}{{ relatedUrlsArray[-1] }}" title="{{ relatedTitlesArray[-1] }}">{{ relatedTitlesArray[-1] }}</a></li>
+
+	<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">All Posts</a></li>
+
+{% else %}
+
+	<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">All Posts</a></li>
+
+{% endif %}
+
+</ul>

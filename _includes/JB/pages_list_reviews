@@ -1,0 +1,15 @@
+
+  {% for node in reviews_list %}
+    {% if node.title != null %}
+      {% if group == null or group == node.group %}
+      	{% if page.url == node.url %}
+      	<li class="active {{node.category}}link iconic" ><a href="{{ BASE_PATH }}{{node.url}}" class="active" id="{{node.title}}">{{node.title}}</a></li>
+      	{% else %}
+      	<li class="{{node.category}}link iconic" ><a href="{{ BASE_PATH }}{{node.url}}"  id="{{node.title}}">{{node.title}}</a></li>
+      	{% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+{% assign reviews_list = nil %}
+{% assign group = nil %}
