@@ -18,30 +18,23 @@ I also give my humble gratitude to the following great artists, whose masterclas
 - Prince Rama Varma (Chennai)
 - Charulathi Mani (Auroville)
 
+{% include figure image_path="assets/images/adishakti-theatre.jpg" caption="Adishakti Theatre, Pondicherry, Tamil Nadu" %}
 
 <h3>TL;DR</h3>
 <div class="tldr">
 A former professional touring musician, composer and producer,  I now work full-time in between music, medicine and therapy. I discovered Nadopasana as part of Carnatic music training in South India, and after four years' intensive study, I use it as a framework to inform all my work. 
 </div><br>
 
-I moved in Tamil Nadu, South India, with my family in 2012. Having spent twenty years as a professional musician and songwriter, working as a trumpet player, singer, composer and producer in both art and commercial music, I had become increasingly disillusioned, and quit. In IndiaBecoming a father i 2012 had a radical impact on how I understood music, and I started to investigate how we can use music to improve our physical and psychological health. I now work with Nigel Osborne, the pioneering music therapist and community music leader, in the field of music and trauma, and am training in Orff Music Therapy with Ksenija Buric.
+ Having spent twenty years as a professional musician and songwriter, working as a trumpet player, singer, composer and producer in both art and commercial music, I had become increasingly disillusioned, and quit. I jumped at a chance for a reset by moving to South India with my young family in 2014. Now living and working with actors in Adishakti Theatre, Pondicherry, I came across Carnatic music in the form of the vocalist M D Ramanathan. 
 
-My discovery of Yoga Nadopasana was by chance: at the time, I had quit music professionally for several years, and was running a startup company in the field of language acquisition and literacy.
+{% include figure image_path="assets/images/mdr1.jpg" caption="The great vocalist and teacher, MD Ramanathan" %}
 
-I was invited to India for one week. In that week living at Adishakti Theatre, I came across Carnatic music in the form of the vocalist M D Ramanathan. I did not know it at the time, but he was a singer who epitomised bhava, the synthesis of artistic intention and spiritual focus. I have written quite a few pieces about the effect of discovering Carnatic music 
+ I did not know it at the time, but he was a singer who epitomised bhava, the synthesis of artistic intention and spiritual focus. I have written quite a few pieces about the effect of [discovering Carnatic music](/resources/#blog) and how I fell in love with it almost immediately. 
 
-After months of enquiries, I was finally accepted by a wonderfully generous teacher in Pondicherry, Shobha Raghavan (Aurobindo Ashram), whose diligent teaching and endless patience with my inane questions instilled in me the initial disciple and love for the basic practice that forms the base of Nadopasana.
+After months of enquiries, I was finally accepted by a wonderfully generous teacher in Pondicherry, Shobha Raghavan (Aurobindo Ashram), whose diligent teaching and endless patience with my inane questions instilled in me the initial discipline and love for the basic practice.
 
- After one year studying Carnatic vocal music in Pondicherry, Tamil Nadu, with 
-Shobha Raghavan (Aurobindo Ashram, Pondicherry), she was sadly involved in a serious car accident. 
+I was introduced to Yoga Nadopasana in Auroville through Bruno Leduc-Corbet, a disciple of the Nadopasana practitioner and acclaimed veena artist [M. Nageswara Rao](/resources/#listening-instrumental), and later had the great fortune to continue my studies with Krishna Kumar, a disciple of MD Ramanathan, the singer who made me fall in love with Carnatic music in the first place.
 
-I was introduced to Yoga Nadopasana through Bruno Leduc-Corbet, a disciple of the sublime veena artist [M. Nageswara Rao](https://www.youtube.com/watch?v=Qzfzz_c27pk&list=RDQzfzz_c27pk){:target="_blank"}.
+In 2017, I began teaching Yoga Nadopasana at the Integral Sound Healing Training courses run by Aurelio and team at [Svaram](http://svaram.org){:target="_blank"}, and the enthusiasm of the students led to the idea to create an online resource such as this.
 
-
-
-
-I
-
-
-
-  I am mostly self-taught, with the brief exception of six months studying trumpet at the Gnessenka Academy, Moscow
+The effect I noticed on my own wellbeing led me to research the role of sound and music in physical and psychological health. I now work in the fast-growing field of music medicine and health alongside [Prof. Nigel Osborne](https://thedoctorskitchen.com/podcasts/65-more-than-medicine-2-of-3-music-as-medicine-with-professor-nigel-osbourne){:target="_blank"}, the music and trauma pioneer, and am training in Orff Music Therapy with Dr. Ksenija Buric.

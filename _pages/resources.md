@@ -4,7 +4,7 @@ title: "Helpful Resources"
 author_profile: true
 header:
     image: /assets/images/quote-960.jpg
-permalink: /helpful-resources/
+permalink: /resources/
 toc: true
 ---
 ## Practice {#practice}
@@ -22,7 +22,7 @@ toc: true
 </ol>
 
 ## Listening {#listening}
-### Vocal
+### Vocal {#listening-vocal}
 {% assign vocal = site.listening | where: "type","vocal" %}
 {% assign instrumental = site.listening | where: "type","instrumental" %}
 <ul>
@@ -31,7 +31,7 @@ toc: true
 {{item.description}}</li>
 {% endfor %}
 </ul>
-### Instrumental
+### Instrumental {#listening-instrumental}
 <ul>
 {% for item in instrumental %}
 <li><a href="{{ item.video }}" target="_blank"><b>{{ item.title }}</b></a><br>
