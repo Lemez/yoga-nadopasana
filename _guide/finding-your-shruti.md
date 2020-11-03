@@ -40,12 +40,14 @@ When we sing in the morning, we are actually taller, and our muscles are longer,
 {% endfor %}
 </ul>
 
-
 ### Buying An Instrument
 Beginners usually use recordings, but if you do get deep into your practice and would like to get a real instrument, it does add an extra dimension to feel the vibrations physically in the room with you.
 
-Carnatic music is 
-As I am a trumpet player, I feel personally
+{% include video id="yYU-R8LSIfs" provider="youtube" caption="Although a stringed tanpura is traditional in South Indian music, as a trumpet player, I connect strongly to the bellows of a Hindustani shruti box and the feeling that I have some musical lungs singing beside me."%}
+
+The best tanpuras are from Thanjavur in Tamil Nadu, and the best shruti boxes from Kolkata in Bengal. If you are considering getting an instrument, recommend speaking to one of the few shops/importers who know the tradition deeply. [This workshop from the Netherlands](https://www.tosslevy.nl/tanpura/) has a lot of detailed information about the history of the tanpura and sometimes instruments for sale. There are similarly [small importers/workshops](http://www.keshav-music.com/shruti-boxes) in the US . 
+
+Please note, these are not personal recommendations. I bought my own instrument in Auroville, India, from my friends at the wonderful sound research and practice centre, [Svaram](http://www.svaram.org).
 
 
 

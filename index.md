@@ -3,13 +3,17 @@ layout: home
 # classes: wide
 author_profile: true
 toc: true
-title: ""
+title: "Yoga Nadopasana"
 header:
-    image: /assets/images/quote-960.jpg
+    # image: /assets/images/quote-960.jpg
     # caption: "<a href='#what-is-nadopasana'>What Is Yoga Nadopasana?</a>"
     # overlay_image: /assets/images/jon-with-border-1-sm-banner.JPG
     # caption: "Embodied Voicework from South India"
     # overlay_filter: rgba(205, 0, 0, 0.5)
+    video:
+    # id: 9mIkkDRpuKE
+        id: wuVpcr8Rrzg
+        provider: youtube
   
 ---
 <!-- {% include figure image_path="/assets/images/quote.jpg" alt="image of Saint Thyagaraja" %} -->
@@ -26,7 +30,7 @@ In Western terms, Nadopasana can be seen as a practice for <b>embodied music</b>
 
 ### How Will I Feel?
 <br>
-It is relatively common to feel euphoric or moved to tears during this practice. We are literally vibrating our bodies with the power of our own voice, massaging ourselves, looking after our own wellbeing. It is an intense act of self-care using sound.
+It is relatively common to feel emotional during this practice, either [euphoric or moved to tears](/testimonials/#student-reactions) . We are literally vibrating our bodies with the power of our own voice, massaging ourselves, looking after our own wellbeing. It is an intense act of self-care using sound.
 
 ### Why Can It Be So Emotional?
 <br>

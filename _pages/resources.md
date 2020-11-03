@@ -2,6 +2,8 @@
 layout: single
 title: "Helpful Resources"
 author_profile: true
+header:
+    image: /assets/images/quote-960.jpg
 permalink: /helpful-resources/
 toc: true
 ---

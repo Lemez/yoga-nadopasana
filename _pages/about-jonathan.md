@@ -4,7 +4,7 @@ show_meta: false
 author_profile: false
 title: "About / Join Us"
 header:
-    overlay_image: /assets/images/jon-with-border-1-sm.JPG
+  overlay_image: /assets/images/jon-with-border-1-sm.JPG
 permalink: "/about-jonathan/"
 ---
 <b>First of all, I would like to give pranams and endless gratitude to my teachers and their generosity, without whom this joyous part of my life would not exist:</b>
