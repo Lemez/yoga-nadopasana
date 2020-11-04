@@ -8,7 +8,7 @@ header:
     # caption: "The trinity of Carnatic composers"
     overlay_image: /assets/images/tanpura-banner.jpg
   # overlay_filter: rgba(205, 0, 0, 0.5)
-permalink: /lets-sing/
+permalink: /guide/
 ---
 {% assign pages = site.guide | sort: "order" %}
 <ol>

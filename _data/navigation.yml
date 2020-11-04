@@ -5,7 +5,7 @@ main:
   # - title: ""
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Getting Started"
-    url: /lets-sing/
+    url: /guide/
   - title: "Resources"
     url: /resources/
   - title: "Practice With Us"
