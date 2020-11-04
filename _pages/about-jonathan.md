@@ -2,7 +2,7 @@
 layout: single
 show_meta: false
 author_profile: false
-title: "About / Join Us"
+title: "About / Contact"
 header:
   overlay_image: /assets/images/jon-with-border-1-sm.JPG
 permalink: "/about-jonathan/"
