@@ -4,7 +4,6 @@ title:  "Finding Your Shruti"
 type: 
 order: 1
 toc: true
-permalink: /guide/finding-your-shruti/
 ---
 ### Finding your shruti
 Although Nadopasana is a personal practice that we mostly do by ourselves, the sound that we produce is never alone, as we are always accompanied by a drone instrument, most typically a South Indian tanpura or a North Indian shruti box.
