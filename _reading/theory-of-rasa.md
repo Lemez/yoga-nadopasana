@@ -1,4 +1,4 @@
 ---
-title: "The Theory Of Rasa"
+title: "Theory Of Rasa"
 author: Chaudhury
 ---

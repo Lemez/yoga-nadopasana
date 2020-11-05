@@ -99,6 +99,12 @@ author:
   # location         : ""
   # email            :
   links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: https://www.instagram.com/nadopasanayoga/
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: https://www.youtube.com/channel/UC2SL1w7SiUpZ8pPWWKFxTSQ
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
     #   # url: "mailto:your.name@email.com"
@@ -121,24 +127,13 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: https://www.instagram.com/nadopasanayoga/
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: https://www.youtube.com/channel/UC2SL1w7SiUpZ8pPWWKFxTSQ
+
 
 
 # Reading Files
@@ -274,20 +269,26 @@ collections:
   techniques:
     output: true
     permalink: /:collection/:name
-  reading:
-    output: true
   blog:
     output: true
+    permalink: /:collection/:name
   practice:
     output: false
   tanpura:
-    output: true
+    output: false
   listening:
-    output: true
+    output: false
+  reading:
+    output: false
   testimonials:
+    output: false
+  lectures:
     output: false
   watching:
     output: false
+  websites:
+    output: false
+
 
 # Defaults
 defaults:
@@ -308,7 +309,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: false

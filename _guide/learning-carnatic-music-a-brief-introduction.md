@@ -1,13 +1,14 @@
 ---
 layout: single
-title:  "Learning Carnatic Music: A Brief Introduction"
-order: 3
+title:  "About My Learning Journey"
+order: 10
+permalink: /guide/learning-journey/
 ---
-It is beyond the scope of this site to write a long essay on the history of Carnatic music, its development from Tamizh Isai to the concert music form encouraged under British rule. Rather, I prefer here to reflect on my learning process, and what I have noticed in my journey so far.
+ As Yoga Nadopasana is a practice that belongs to the Carnatic music tradition, here are some notes from my own learning process as a Western-educated musician.
 
-Indian musicians, and Carnatic musicians are no exception, are some of the most accomplished in the world. This is no surprise - the website [karnatik.com](http://karnatik.com){:target=>blank} has the following advice for beginners:
+Indian musicians, and Carnatic musicians are no exception, are some of the most accomplished in the world. This is no surprise - the website [karnatik.com](http://karnatik.com){:target=>'_blank'} has the following advice for beginners:
 
 > It is not enough to just show up for class once a week. Practice everyday, even for as little as half an hour. For those who wish to be performers, weekday practice should be 4-5 hours.
 
-
-While 
+Here are some observations that I have made on my ongoing journey so far:
+- Pitches are not fixed, so this means that although you may know the notes in a particular raga, and you may even know the arohana (ascending note order)m and avarohana (descending note order), the gamakas 
