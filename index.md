@@ -40,8 +40,8 @@ Yoga Nadopasana is a practice that strengthens lung power, vibrates the entire b
 
 ### How Will I Feel?
 <br>
-It is relatively common to feel emotional during this practice, either [euphoric or moved to tears](/testimonials/#student-reactions) . We are literally vibrating our bodies with the power of our own voice, massaging ourselves, looking after our own wellbeing. It is an intense act of self-care using sound.
+It is relatively common to feel emotional during this practice, either [euphoric or moved to tears]({{ site.baseurl }}/testimonials/#student-reactions) . We are literally vibrating our bodies with the power of our own voice, massaging ourselves, looking after our own wellbeing. It is an intense act of self-care using sound.
 
 ### Why Did You Make This Site?
 <br>
-After a lifetime in music, Yoga Nadopasana remains the only way that I know to give me a feeling of euphoria and oneness, every day, guaranteed, in just fifteen to twenty minutes of practice. Students also report that this feeling of deep wellbeing comes to them more reliably in this practice than in other forms of yoga. I have been teaching Yoga Nadopasana since 2017, and students often ask if they can continue with me online, and if I can help them to set up a practice routine of their own at home. I was lucky enough to be taught this practice by [the most generous teachers](/about-jonathan/), and I hope that this site will help you to develop your own. 
+After a lifetime in music, Yoga Nadopasana remains the only way that I know to give me a feeling of euphoria and oneness, every day, guaranteed, in just fifteen to twenty minutes of practice. Students also report that this feeling of deep wellbeing comes to them more reliably in this practice than in other forms of yoga. I have been teaching Yoga Nadopasana since 2017, and students often ask if they can continue with me online, and if I can help them to set up a practice routine of their own at home. I was lucky enough to be taught this practice by [the most generous teachers]({{ site.baseurl }}/about-jonathan/), and I hope that this site will help you to develop your own. 
