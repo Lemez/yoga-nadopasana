@@ -13,6 +13,6 @@ permalink: /guide/
 {% assign pages = site.guide | sort: "order" %}
 <ol>
 {% for page in pages %}
-<li style="margin-top:1em;font-weight:400;"><a style="text-decoration: none;" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+<li style="margin-top:1em;font-weight:400;"><a style="text-decoration: none;" href="{{ site.baseurl }}{{ page.url }}" attr="baseurl">{{ page.title }}</a></li>
 {% endfor %}
 </ol>
