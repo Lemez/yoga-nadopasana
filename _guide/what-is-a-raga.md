@@ -6,7 +6,7 @@ toc: true
 ---
 ## Technical
 ### The Melakarta system
-The Carnatic music system is organised into what is respected by many as the most complete classification system in the world: 72 modes, each belonging to one of 12 parent families (chakras).
+The Carnatic music system is organised into what is respected by many as the most complete classification system in the world: 72 modes, each belonging to one of 12 parent families (chakras). 
 
 {% include figure image_path="/assets/images/Melakarta.katapayadi.sankhya.72.png" caption="The Melakarta system of raga classification."  %}
 
@@ -31,7 +31,7 @@ One of the janya ragas of Shankarabharanam is the pentatonic Hamsadhwani, a wond
 
 {% include figure image_path="/assets/images/Hamsadhwani_scale.svg.png" caption="The pentatonic raga, Hamsadhwani, which belongs to the Shankarabharanam (or Western major equivalent) parent raga" %}
 
-There are many hundreds of books and articles written about the raga system.
+There are many hundreds of books and articles written about the raga system. I heartily recommend looking at 
 
 ## Spiritual
 
