@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jonathan Walton"
+  name             : "Yoga Nadopasana"
   avatar           : "/assets/images/kolam-avatar.jpg"
-  bio              : "Welcome to my resource page for Yoga Nadopasana, a traditional embodied voicework practice from South India. Please <a href='{{ site.baseurl }}/about-jonathan/'><u>contact me</u></a> if you have any questions or would like to join an online practice group."
+  bio              : "Welcome to our online home for Yoga Nadopasana, an embodied voicework practice from the Carnatic music tradition of South India. <br>Please <a href='{{ site.baseurl }}/about-jonathan/'><u>contact us</u></a> if you have any questions or would like to join an online practice group."
   # location         : ""
   # email            :
   links:

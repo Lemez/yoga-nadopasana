@@ -7,6 +7,7 @@ header:
   overlay_image: /assets/images/jon-with-border-1-sm.JPG
 permalink: "/about-jonathan/"
 ---
+## About Jonathan
 <b>First of all, I would like to give pranams and endless gratitude to my teachers and their generosity, without whom this joyous part of my life would not exist:</b>
 - Shobha Raghavan (Aurobindo Ashram, Pondicherry)
 - Bruno Leduc-Corbet (Auroville), disciple of M. Nageswara Rao

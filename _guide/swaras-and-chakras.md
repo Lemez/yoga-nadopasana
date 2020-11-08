@@ -2,6 +2,7 @@
 layout: single
 title:  "Swaras and Chakras"
 order: 3
+published: false
 ---
 
 {% include figure image_path="assets/images/nadocrop.png" caption="Swaras in red indicate a chakra position to the rear of the body, corresponding with the 'I' vowel sound" %}

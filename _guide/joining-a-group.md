@@ -3,19 +3,20 @@ layout: single
 title:  "Preparing for Practice"
 order: 3
 ---
+## Before you start
+
 Before starting practice, either alone or in a group session, please make sure you have read the previous articles in this list, and opened a browser tab with the shruti, or drone accompaniment.
 
+You will need:
+- Comfortable, loose clothing
+- A drone instrument accompaniment, tuned to A or another comfortable note
+
+## Posture
+
+The traditional posture for singing Carnatic music is seated on the floor with crossed legs, but for people not used to sitting in this position for long periods of time, it is important to be comfortable.
+
+- Seated on the floor, with crossed legs, on one or more cushions for support as necessary
+- If this is difficult, you can sit on a hard chair with a cushion (preferably not a sofa)
+- The feelings will be strongest if your spine should be as straight as possible, with your hips pushed forward
 
 
-Requirements:
-Comfortable, loose clothing
-A drone instrument accompaniment, tuned to A or another comfortable note
-
-The traditional posture for singing Carnatic music is seated on the floor with crossed legs.
-
-
-Posture:
-Seated on the floor, with crossed legs, on one or more cushions 
-If this is difficult, you can sit on a hard chair with a cushion (not a sofa)
-Straight back (hips pushed forward)
-Make sure you are comfortable

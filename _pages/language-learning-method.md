@@ -1,4 +1,13 @@
+## Three stages of acquisition
+## Feeling good as an educational paradigm
+
+
+## ALSO, I am a study skills coach
+
 Language acquisition has three cognitive stages: remembering, using and adapting. The stages are cumulative - there is no point in trying a later stage without the one before.
+
+
+
 
 1) Remembering
 What is makes something really memorable?

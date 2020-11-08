@@ -3,6 +3,7 @@ layout: single
 title:  "About My Learning Journey"
 order: 10
 permalink: /guide/learning-journey/
+published: false
 ---
  As Yoga Nadopasana is a practice that belongs to the Carnatic music tradition, here are some notes from my own learning process as a Western-educated musician.
 
