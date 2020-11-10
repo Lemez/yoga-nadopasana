@@ -24,7 +24,7 @@ Nadopasana is a conscious voice practice from South India.
 
 Literally translating as *devotion to/attention to/worship through* (upasana)  *sound* (nada), the basic exercises form a core daily practice in Carnatic music. Carnatic music is the sacred classical music of South India, which for many centuries was performed exclusively in temples as part of devotional ritual.
 
-In Western terms, Nadopasana can be seen as a practice for <b>embodied music</b>: a conscious placing and moving of the voice inside the body. As such, it can extremely useful for musicians, actors and dancers who use their bodies to create. It can also be extremely effective for anyone who is looking to calm an overactive mind, and create a deep feeling of relaxation through every part of the body.
+In Western terms, Nadopasana can be seen as a practice for <b>embodied music</b>: a conscious placing and moving of the voice inside the body. As such, it can be extremely useful for musicians, actors and dancers who use their bodies to create. It can also be highly effective for anyone who is looking to calm an overactive mind, and create a deep feeling of relaxation through every part of the body.
 
 {% include figure image_path="/assets/images/chakras.jpg"  %}
 
