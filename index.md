@@ -40,8 +40,8 @@ Yoga Nadopasana is a practice that strengthens lung power, vibrates the entire b
 
 ### How Will I Feel?
 <br>
-It is relatively common to feel emotional during this practice, either [euphoric or moved to tears]({{ site.baseurl }}/testimonials/#student-reactions) . We are literally vibrating our bodies with the power of our own voice, massaging ourselves, looking after our own wellbeing. It is an intense act of self-care using sound.
+It is relatively common to feel emotional during this practice, either [euphoric or even moved to tears]({{ site.baseurl }}/testimonials/#student-reactions) . We are literally vibrating our bodies with the power of our own voice, massaging ourselves, looking after our own wellbeing. It is an intense act of self-care using sound.
 
-### Why Did You Make This Site?
+### What Is The Idea of This Site?
 <br>
-After a lifetime in music, Yoga Nadopasana remains the only way that I know to give me a feeling of euphoria and oneness, every day, guaranteed, in just fifteen to twenty minutes of practice. Students also report that this feeling of deep wellbeing comes to them more reliably in this practice than in other forms of yoga. I have been teaching Yoga Nadopasana since 2017, and students often ask if they can continue with me online, and if I can help them to set up a practice routine of their own at home. I was lucky enough to be taught this practice by [the most generous teachers]({{ site.baseurl }}/about-jonathan/), and I hope that this site will help you to develop your own. 
+Practising Yoga Nadopasana is a way to create a feeling of euphoria and oneness in at little as twenty minutes, and the more you practice, the deeper it becomes. Some students have reported that this feeling of wellbeing comes to them more reliably with Nadopasana than in other forms of yoga. The idea of this site is to provide resources and background materials for anyone who wants to practice at home, or to join an online group to practice together. I was lucky enough to be taught by [the most generous teachers]({{ site.baseurl }}/about-jonathan/), and I hope that this site will help you to develop your own. 
