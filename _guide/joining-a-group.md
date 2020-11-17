@@ -2,6 +2,7 @@
 layout: single
 title:  "Preparing for Practice"
 order: 3
+related: true
 ---
 ## Before you start
 
@@ -17,6 +18,8 @@ The traditional posture for singing Carnatic music is seated on the floor with c
 
 - Seated on the floor, with crossed legs, on one or more cushions for support as necessary
 - If this is difficult, you can sit on a hard chair with a cushion (preferably not a sofa)
-- The feelings will be strongest if your spine should be as straight as possible, with your hips pushed forward
+- The feelings will be strongest if your spine is be as straight as possible, with your hips pushed forward
 
-
+## Online Groups
+- Make sure to open a browser tab with the [correct tanpura accompaniment]({{ site.baseurl }}/resources/#practice). We usually use tanpura in the key of A for group work.
+- The accompaniment should be loud, so that can you feel it supporting you as you sing. Using heaphones is an easy way to feel this support.

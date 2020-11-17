@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Finding Your Shruti"
+title:  "Shruti and Instruments"
 type: 
 order: 1
 toc: true

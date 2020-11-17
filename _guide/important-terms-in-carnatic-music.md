@@ -4,12 +4,12 @@ title:  "Important Terms in Nadopasana / Carnatic Music"
 header:
     image: /assets/images/trinity-colour-banner.jpg
 type: 
-order: 9
+order: 4
 toc: true
 ---
 The three key elements of Carnatic music are:
 
-1. <b>raga</b>: a mode, but it's [more complicated](/guide/what-is-a-raga) than that 
+1. <b>raga</b>: a mode, but it's [more complicated]({{ site.baseurl }}/guide/what-is-a-raga) than that 
 2.  <b>talam</b>: the rhythmic cycle, generally marked with your right hand as you sing
 3.  <b>bhava</b>: spiritual essence, or divine intention
 
@@ -19,7 +19,7 @@ Further important terms:
 -  <b>sahityam</b>: lyrics, mostly written in one of the South Indian langauges (Telugu, Tamil, Malayalam, Kannada) or Sanskrit
 -  <b>arohana</b>: ascending note order of a raga 
 -  <b>avarohana</b>: descending note order of a raga 
--  <b>gamaka</b>: ornamentation or embellishment of a swara
+-  <b>gamakam</b>: ornamentation or embellishment of a swara
 -  <b>geetham</b>: a song
 -  <b>varnam</b>: equivalent to a study or étude in Western music, a composition with that encapsulates the essence of a raga
 -  <b>vaggyekara</b>: composer
