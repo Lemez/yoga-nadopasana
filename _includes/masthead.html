@@ -12,9 +12,15 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         <ul class="visible-links">
+
+          {% assign thispage = page.url   %}
+           <!-- page.url is not working at the moment -->
+
           {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+            {% assign nav = link.url  %}
+            {% capture active_class %}{% if thispage contains nav %}yep{% else %} nope{% endif %}{% endcapture%}
+            <li class="masthead__menu-item {{active_class}} {{nav}} {{thispage}} ">
+              <a  href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>
