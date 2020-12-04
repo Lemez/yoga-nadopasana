@@ -23,9 +23,11 @@ toc: true
 <li><a href="../assets/pdf/mandrastaayi-varisai-complete.pdf">Mandrastaayi Varisai </a></li>
 </ol>
 ### Sheet Music {#geethams}
-<ul>
+<ol>
+    <li><a href="../assets/pdf/lambodara-geetham.pdf">Sri Gananatha (Raga Malahari)</a></li>
     <li><a href="../assets/pdf/KamalaJadalaDocumentation.pdf">Kamala Jadala (Raga Kalyani)</a></li>
-</ul>
+    
+</ol>
 
 ### Online lectures {#lectures}
 {% assign groups = site.lectures | group_by: "level" %}
