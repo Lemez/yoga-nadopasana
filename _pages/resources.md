@@ -16,9 +16,11 @@ toc: true
 </ul>
 ### Exercises {#exercises}
 <ol>
-<li><a href="../assets/pdf/carnatic-ganamrutha-bodhini-lesson-1.pdf">Sarali Varisai A</a></li>
-<li><a href="../assets/pdf/carnatic-ganamrutha-bodhini-lesson-1-c.pdf">Sarali Varisai B</a></li>
-<li><a href="../assets/pdf/carnatic-ganamrutha-bodhini-lesson-2.pdf">Jantai Varisai A</a></li>
+<li><a href="../assets/pdf/sarali-varisai-complete.pdf">Sarali Varisai</a></li>
+<li><a href="../assets/pdf/jantai-varisai-complete.pdf">Jantai Varisai </a></li>
+<li><a href="../assets/pdf/daatu-varisai-complete.pdf">Daatu Varisai </a></li>
+<li><a href="../assets/pdf/melstaayi-varisai-complete.pdf">Melstaayi Varisai </a></li>
+<li><a href="../assets/pdf/mandrastaayi-varisai-complete.pdf">Mandrastaayi Varisai </a></li>
 </ol>
 ### Sheet Music {#geethams}
 <ul>
