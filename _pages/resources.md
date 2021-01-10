@@ -8,6 +8,9 @@ permalink: /resources/
 toc: true
 ---
 ## Practice {#practice}
+### Chakras {#chakras}
+<ul><li><a href="../assets/images/chakras_and_swaras.png">Swaras and Chakras chart</a></li></ul>
+
 ### Tanpura {#tanpura}
 <ul>
  {% for item in site.tanpura %}
