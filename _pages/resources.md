@@ -26,6 +26,7 @@ toc: true
 <ol>
     <li><a href="../assets/pdf/lambodara-geetham.pdf">Sri Gananatha (Raga Malahari)</a></li>
     <li><a href="../assets/pdf/KamalaJadalaDocumentation.pdf">Kamala Jadala (Raga Kalyani)</a></li>
+    <li><a href="http://www.shivkumar.org/music/varnams/varaveena-geetham.pdf">Vara Veena (Raga Mohanam)</a></li>
     
 </ol>
 
